@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 
 # Step 1: Load the CSV
-df = pd.read_csv("food_allergens.csv")
+df = pd.read_csv("Labels/food_allergens.csv")
 
 # Step 2: Build a label → allergens mapping
 label_to_allergens = {}
@@ -52,8 +52,18 @@ def process_masks(mask_folder, start=0, end=100):
 mask_folder = "FoodSeg103/Images/ann_dir/train"
 image_allergen_map = process_masks(mask_folder)
 
-# Step 4: Save or display
-with open("image_to_allergens.json", "w") as f:
-    json.dump(image_allergen_map, f, indent=2)
+all_allergens = sorted(allergen_columns)
+csv_rows = []
+
+for image, allergens in image_allergen_map.items():
+    row = {"image": image}
+    for allergen in all_allergens:
+        row[allergen] = int(allergen in allergens)
+    csv_rows.append(row)
+
+df_out = pd.DataFrame(csv_rows)
+df_out.to_csv("image_to_allergens.csv", index=False)
+
+print("CSV file 'image_to_allergens.csv' created successfully.")
 
 print(image_allergen_map)

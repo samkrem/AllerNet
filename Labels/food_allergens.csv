@@ -1,13 +1,13 @@
 id,food,milk,egg,fish,crustacean shellfish,tree nuts,peanut,wheat,soy
 0,background,0,0,0,0,0,0,0,0
 1,candy,0,0,0,0,0,0,0,0
-2,egg tart,0,1,0,0,0,0,0,0
+2,egg tart,1,1,0,0,0,0,0,0
 3,french fries,0,0,0,0,0,0,0,0
-4,chocolate,0,0,0,0,0,0,0,0
-5,biscuit,0,0,0,0,0,0,1,0
+4,chocolate,1,0,0,0,1,0,0,0
+5,biscuit,1,1,0,0,0,0,1,1
 6,popcorn,0,0,0,0,0,0,0,0
-7,pudding,1,0,0,0,0,0,0,0
-8,ice cream,1,0,0,0,0,0,0,0
+7,pudding,1,1,0,0,0,0,0,1
+8,ice cream,1,1,0,0,0,0,0,1
 9,cheese butter,1,0,0,0,0,0,0,0
 10,cake,0,1,0,0,0,0,0,0
 11,wine,0,0,0,0,0,0,0,0
@@ -57,16 +57,16 @@ id,food,milk,egg,fish,crustacean shellfish,tree nuts,peanut,wheat,soy
 55,shellfish,0,0,0,1,0,0,0,0
 56,shrimp,0,0,0,1,0,0,0,0
 57,soup,0,0,0,0,0,0,0,0
-58,bread,0,0,0,0,0,0,1,0
+58,bread,1,1,0,0,0,0,1,1
 59,corn,0,0,0,0,0,0,0,0
-60,hamburg,0,0,0,0,0,0,0,0
-61,pizza,0,0,0,0,0,0,0,0
-62,hanamaki baozi,0,0,0,0,0,0,0,0
+60,hamburg,1,1,0,0,0,0,1,1
+61,pizza,1,0,0,0,0,0,0,0
+62,hanamaki baozi,0,0,0,0,0,0,1,0
 63,wonton dumplings,0,0,0,0,0,0,0,0
-64,pasta,0,0,0,0,0,0,1,0
+64,pasta,0,1,0,0,0,0,1,0
 65,noodles,0,0,0,0,0,0,1,0
 66,rice,0,0,0,0,0,0,0,0
-67,pie,0,0,0,0,0,0,0,0
+67,pie,1,1,0,0,0,0,1,0
 68,tofu,0,0,0,0,0,0,0,1
 69,eggplant,0,0,0,0,0,0,0,0
 70,potato,0,0,0,0,0,0,0,0
