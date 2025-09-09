@@ -1,0 +1,13 @@
+torch
+torchvision
+pandas
+numpy
+pillow
+opencv-python
+tqdm
+matplotlib
+scikit-image
+albumentations
+segmentation-models-pytorch
+timm
+git+https://github.com/lucasb-eyer/pydensecrf.git
